@@ -1,0 +1,17 @@
+﻿backbone,stage,method,parameters_million,classification_accuracy_mean,classification_accuracy_sd,classification_balanced_accuracy_mean,classification_balanced_accuracy_sd,classification_macro_f1_mean,classification_macro_f1_sd,strict_localization_recall_at_2px_mean,strict_localization_recall_at_2px_sd,strict_localization_f1_at_2px_mean,strict_localization_f1_at_2px_sd,strict_localization_matched_mae_at_2px_px_mean,strict_localization_matched_mae_at_2px_px_sd
+SimpleCNN,1,Classification baseline,0.098,0.8681,0.0114,0.8919,0.0066,0.8823,0.0129,,,,,,
+SimpleCNN,2,Localization baseline,0.212,,,,,,,0.9938,0.0031,0.9958,0.0018,0.361,0.052
+SimpleCNN,3,Shared multi-task,0.213,0.8563,0.0201,0.8831,0.0164,0.868,0.0232,0.9927,0.0072,0.9937,0.0042,0.284,0.069
+SimpleCNN,4,Physics-informed multi-task (Ours),0.233,0.899,0.0085,0.9151,0.0086,0.9081,0.0072,0.9969,0.0,0.9953,0.0,0.231,0.016
+RepViT-M0.9,1,Classification baseline,4.721,0.8308,0.0308,0.8577,0.0282,0.8449,0.0246,,,,,,
+RepViT-M0.9,2,Localization baseline,4.863,,,,,,,0.9896,0.0072,0.9906,0.0001,0.244,0.052
+RepViT-M0.9,3,Shared multi-task,4.864,0.7717,0.0119,0.8081,0.0076,0.7974,0.01,0.9969,0.0,0.9857,0.0129,0.259,0.038
+RepViT-M0.9,4,Physics-informed multi-task (Ours),4.902,0.8004,0.0106,0.8325,0.0101,0.8235,0.0065,0.9969,0.0,0.9927,0.0009,0.196,0.008
+ResNet-18,1,Classification baseline,11.172,0.9559,0.0034,0.9616,0.0017,0.9591,0.0018,,,,,,
+ResNet-18,2,Localization baseline,11.331,,,,,,,0.9969,0.0031,0.9979,0.0018,0.286,0.093
+ResNet-18,3,Shared multi-task,11.333,0.9577,0.0049,0.9639,0.0046,0.9597,0.0056,0.9948,0.0036,0.9912,0.0032,0.248,0.005
+ResNet-18,4,Physics-informed multi-task (Ours),11.379,0.95,0.0063,0.9579,0.0052,0.9525,0.0065,0.9979,0.0018,0.9953,0.0027,0.236,0.02
+FasterNet-T0,1,Classification baseline,2.627,0.9463,0.0102,0.9546,0.0093,0.95,0.0105,,,,,,
+FasterNet-T0,2,Localization baseline,2.351,,,,,,,0.9938,0.0,0.9948,0.0018,0.262,0.019
+FasterNet-T0,3,Shared multi-task,2.352,0.9395,0.0064,0.9498,0.004,0.944,0.0068,0.9917,0.0048,0.9881,0.0077,0.338,0.049
+FasterNet-T0,4,Physics-informed multi-task (Ours),2.386,0.9409,0.0237,0.9514,0.018,0.938,0.0255,0.9917,0.0018,0.985,0.0057,0.314,0.023
